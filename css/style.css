@@ -35,13 +35,13 @@
 
    /* Overlay Class */
    .overlay {
-    @apply fixed bottom-[21px] inset-x-0 px-[10px] mx-auto max-w-md ;
+    @apply fixed bottom-[21px] inset-x-0 px-[10px] mx-auto max-w-md;
    }
    .overlay_menu {
     @apply p-[10px] rounded-full shadow-lg w-full flex justify-evenly gap-[22px] bg-[#FFF] z-[999];
    }
    .overlay_link {
-    @apply flex flex-col gap-[6px] justify-center items-center text-neutral_black2 hover:text-accent2 text-[10px] font-normal leading-5 tracking-tight;
+    @apply flex flex-col gap-[6px] justify-center items-center text-neutral_black2 hover:text-accent2 text-[10px] font-normal leading-5 tracking-tight z-[999];
    }
 
    /* Login Class */
@@ -66,6 +66,12 @@
    .form_input {
     @apply relative;
    }
+   .username {
+    @apply p-3 w-full rounded-sm outline-none border border-[#F1F1F1] pl-11;
+   }
+   .username_icon {
+    @apply absolute top-3 left-3 block;
+   }
    .email {
     @apply p-3 w-full rounded-sm outline-none border border-[#F1F1F1] pl-11;
    }
@@ -73,10 +79,16 @@
     @apply absolute top-3 left-3 block;
    }
    .password {
-    @apply p-3 w-full rounded-sm outline-none border border-[#F1F1F1] pl-11;
+    @apply p-3 w-full rounded-sm outline-none border border-[#F1F1F1] pl-11 pr-11;
    }
    .password_icon {
     @apply absolute top-3 left-3 block;
+   }
+   .visible {
+    @apply absolute top-3 right-3 block cursor-pointer;
+   }
+   .unvisible {
+    @apply hidden cursor-pointer z-10 bg-[#FFF] absolute top-3 right-3;
    }
    .login_btn {
     @apply py-[14px] px-10 bg-accent2 rounded-lg text-center text-[#FFF] text-sm font-bold leading-5 mt-2 hover:scale-105 duration-300;

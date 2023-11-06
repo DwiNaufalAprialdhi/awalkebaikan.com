@@ -692,6 +692,7 @@ nav{
 }
 
 .overlay_link{
+  z-index: 999;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -776,6 +777,25 @@ nav{
   position: relative;
 }
 
+.username{
+  width: 100%;
+  border-radius: 0.125rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(241 241 241 / var(--tw-border-opacity));
+  padding: 0.75rem;
+  padding-left: 2.75rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.username_icon{
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  display: block;
+}
+
 .email{
   width: 100%;
   border-radius: 0.125rem;
@@ -803,6 +823,7 @@ nav{
   border-color: rgb(241 241 241 / var(--tw-border-opacity));
   padding: 0.75rem;
   padding-left: 2.75rem;
+  padding-right: 2.75rem;
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
@@ -812,6 +833,25 @@ nav{
   top: 0.75rem;
   left: 0.75rem;
   display: block;
+}
+
+.visible{
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  display: block;
+  cursor: pointer;
+}
+
+.unvisible{
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 10;
+  display: none;
+  cursor: pointer;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .login_btn{
@@ -1294,6 +1334,10 @@ nav{
 
 .mt-2{
   margin-top: 0.5rem;
+}
+
+.mt-\[216px\]{
+  margin-top: 216px;
 }
 
 .box-border{
