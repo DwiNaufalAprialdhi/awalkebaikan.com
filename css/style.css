@@ -81,6 +81,33 @@
    .login_btn {
     @apply py-[14px] px-10 bg-accent2 rounded-lg text-center text-[#FFF] text-sm font-bold leading-5 mt-2 hover:scale-105 duration-300;
    }
+   .or {
+    @apply text-center text-neutral_black2 text-sm font-normal leading-5 tracking-tight mt-8;
+   }
+   .form_Link {
+    @apply w-full px-5 flex flex-col gap-4 mt-8 mb-14;
+   }
+   .google {
+    @apply border-[#F1F1F1] border rounded-md py-3 px-4 flex items-center gap-3 hover:scale-105 duration-300;
+   }
+   .google_text {
+    @apply text-center w-full text-neutral_black2 font-bold text-sm leading-5;
+   }
+   .facebook {
+    @apply border-[#F1F1F1] border rounded-md py-3 px-4 flex items-center gap-3 hover:scale-105 duration-300;
+   }
+   .facebook_text {
+    @apply text-center w-full text-neutral_black2 font-bold text-sm leading-5;
+   }
+   .forgot_passowrd {
+    @apply block text-center text-accent2 text-sm font-bold leading-5;
+   }
+   .registration_text {
+    @apply block text-center text-neutral_grey1 text-xs font-normal leading-5 tracking-tight mb-14;
+   }
+   .registration_link {
+    @apply text-accent2 text-xs font-normal leading-5 tracking-tight;
+   }
 
    /* Post Class */
    .post {
