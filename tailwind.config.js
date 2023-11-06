@@ -4,11 +4,11 @@ module.exports = {
             "./**/*.{html,js}"],
   theme: {
     'colors': {
-      'neutral/dark': '#223263',
-      'neutral/grey': '#9098B1',
-      'neutral/grey1': '#707070',
-      'neutral/black': '#27272E',
-      'neutral/black2': '#7F7F90',
+      'neutral_dark': '#223263',
+      'neutral_grey': '#9098B1',
+      'neutral_grey1': '#707070',
+      'neutral_black': '#27272E',
+      'neutral_black2': '#7F7F90',
       'accent2': '#0ECE95',
     },
     fontFamily: {
