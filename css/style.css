@@ -297,7 +297,7 @@
 
    /* Account Class */
    .account {
-    @apply mx-auto max-w-md pt-[67px] pb-[24px];
+    @apply mx-auto max-w-md pt-[67px] pb-[144px];
    }
    .account_profile {
     @apply w-full relative;
