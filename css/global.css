@@ -1054,10 +1054,15 @@ nav{
   padding-bottom: 120px;
 }
 
-.post_card{
+.swiper{
+  max-width: 28rem;
+}
+
+.swiper-slide{
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .post_head{
@@ -1095,37 +1100,26 @@ nav{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.post_body{
-  position: relative;
-  height: 448px;
-  width: 100%;
-  overflow: hidden;
-}
-
 .post_image{
-  position: absolute;
-  z-index: -50;
-  display: block;
   height: auto;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  --tw-brightness: brightness(.75);
+  --tw-brightness: brightness(.5);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 100ms;
 }
 
 .post_imageFlex{
   position: absolute;
-  bottom: 6rem;
-  z-index: -50;
+  bottom: 1.75rem;
+  left: 0px;
+  z-index: 500;
   display: flex;
   width: 100%;
+  max-width: 24rem;
   align-items: center;
   justify-content: space-between;
   padding-left: 1.25rem;
@@ -1134,15 +1128,10 @@ nav{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px){
-  .post_imageFlex{
-    bottom: 4rem;
-  }
-}
-
 @media (min-width: 768px){
   .post_imageFlex{
-    bottom: 1.5rem;
+    bottom: 1.75rem;
+    max-width: 28rem;
   }
 }
 
@@ -1581,7 +1570,7 @@ nav{
   margin-right: auto;
   max-width: 28rem;
   padding-top: 67px;
-  padding-bottom: 144px;
+  padding-bottom: 244px;
 }
 
 .account_profile{
@@ -1716,12 +1705,19 @@ nav{
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.25rem;
   letter-spacing: -0.05em;
   --tw-text-opacity: 1;
   color: rgb(127 127 144 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .account_menuLink{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .sr-only{

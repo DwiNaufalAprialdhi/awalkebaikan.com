@@ -76,3 +76,4 @@ function copyTextCredit() {
 
   navigator.clipboard.writeText(credit.value);  
 }
+

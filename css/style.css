@@ -132,8 +132,17 @@
 
    /* Post Class */
    .post {
-    @apply mx-auto max-w-md max-h-max pt-[122px] pb-[120px] flex flex-col gap-10;
-   }
+       @apply mx-auto max-w-md max-h-max pt-[122px] pb-[120px] flex flex-col gap-10;
+    }
+   .swiper {
+     @apply max-w-md;
+    }
+   .swiper-slide {
+         @apply flex justify-center items-center w-full;
+    }
+    .swiper-wraper {
+        @apply relative;
+    }
    .post_card {
     @apply flex flex-col gap-4;
    }
@@ -153,13 +162,13 @@
     @apply cursor-pointer hover:scale-105;
    }
    .post_body {
-    @apply w-full h-[448px] relative overflow-hidden;
+    @apply w-full;
    }
    .post_image {
-    @apply w-full h-auto block transition duration-100 -z-50 brightness-75 absolute shadow-inner;
+    @apply w-full h-auto object-cover brightness-50 shadow-inner;
    }
    .post_imageFlex {
-    @apply flex items-center justify-between w-full px-5 absolute md:bottom-6 sm:bottom-16 bottom-24 text-[#FFF] -z-50;
+    @apply flex items-center justify-between w-full px-5 text-[#FFF] absolute md:bottom-7 bottom-7 left-0 z-[500] md:max-w-md max-w-sm;
    }
    .post_imageText {
     @apply flex flex-col gap-0;
@@ -297,7 +306,7 @@
 
    /* Account Class */
    .account {
-    @apply mx-auto max-w-md pt-[67px] pb-[144px];
+    @apply mx-auto max-w-md pt-[67px] pb-[244px];
    }
    .account_profile {
     @apply w-full relative;
@@ -339,6 +348,6 @@
     @apply mt-[77px] flex flex-col gap-6 px-4;
    }
    .account_menuLink {
-    @apply flex items-center gap-4 text-neutral_black2 text-base font-bold leading-5 tracking-tighter;
+    @apply flex items-center gap-4 text-neutral_black2 md:text-base text-sm font-bold leading-5 tracking-tighter;
    }
 }
