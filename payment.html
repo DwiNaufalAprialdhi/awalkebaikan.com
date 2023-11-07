@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/awalkebaikan.com.png"
+    />
+    <title>Payment - awalkebaikan.com</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h2 class="navbar_title">Info Pembayaran</h2>
+    </nav>
+
+    <!-- Payment -->
+    <section class="payment">
+      <h2 class="payment_title">
+        Silahkan transfer sesuai dengan nominal dibawah ini
+      </h2>
+      <div class="payment_betweenCopy">
+        <input
+          type="text"
+          class="payment_nominalFirst"
+          value="Rp 20.031"
+          id="nominalInput"
+          disabled
+        />
+        <h2 class="copyNominal" onclick="copyText()">Salin Nominal</h2>
+      </div>
+      <div class="important">
+        <span class="font-bold">PENTING :</span> Transfer tepat sampai 3 digit
+        terakhir agar memudahkan proses verifikasi (Nominal 3 digit terakhir
+        akan di sedekahkan)
+      </div>
+      <h2 class="countdown" id="countdown"></h2>
+      <p class="countdown_detail">
+        Transfer ke rekening dibawah ini, sebelum
+        <span class="font-bold">03 Desember 2024, 23:59 WIB</span> atau donasi
+        akan di batalkan otomatis oleh sistem
+      </p>
+      <h2 class="no_credit">No Rekeking</h2>
+      <div class="payment_betweenCopy">
+        <input
+          type="text"
+          class="payment_credit"
+          value="0012458916245"
+          id="creditInput"
+          disabled
+        />
+        <h2 class="copyNominal" onclick="copyTextCredit()">Salin</h2>
+      </div>
+      <h2 class="payment_bank">
+        Bank: <span class="font-bold text-neutral_black">BCA Cabang Pusat</span>
+      </h2>
+      <h2 class="payment_username">
+        Atas Nama:
+        <span class="font-bold text-neutral_black">Yayasan Alal Aulia</span>
+      </h2>
+      <a href="index.html">
+        <button class="donasiNowBtn">Saya sudah transfer</button>
+      </a>
+      <a href="index.html">
+        <button class="moreCampaignBtn">Lihat Campaign Lain</button>
+      </a>
+    </section>
+
+    <script src="./js/style.js"></script>
+  </body>
+</html>

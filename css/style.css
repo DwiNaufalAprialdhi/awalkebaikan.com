@@ -32,6 +32,12 @@
    .notification {
     @apply cursor-pointer text-neutral_black2 hover:text-accent2 hover:scale-105 duration-300;
    }
+   .navbar_detail {
+    @apply flex items-center gap-2;
+   }
+   .navbar_title {
+    @apply text-base font-bold leading-5 tracking-tighter text-neutral_black2;
+   }
 
    /* Overlay Class */
    .overlay {
@@ -193,5 +199,96 @@
    }
    .post_footerDescLink {
     @apply text-accent2 font-bold text-sm leading-5;
+   }
+
+   /* Donation Class */
+   .donation {
+    @apply mx-auto max-w-md pt-[144px] pb-[24px] px-4;
+   }
+   .donnation_form {
+    @apply flex flex-col gap-6;
+   }
+   .donation_formHead {
+    @apply flex items-center gap-2;
+   }
+   .donation_wrap {
+    @apply flex flex-col gap-0;
+   }
+   .donation_campaign {
+    @apply text-[10px] font-normal leading-5 tracking-tight text-neutral_black2;
+   }
+   .donation_title {
+    @apply text-base font-bold leading-5 tracking-tighter;
+   }
+   .donation_formBody {
+    @apply flex flex-col gap-6;
+   }
+   .donation_inputCol {
+    @apply flex flex-col gap-2 relative;
+   }
+   .donation_label {
+    @apply text-neutral_grey1 text-sm font-bold leading-5;
+   }
+   .donation_input {
+    @apply outline-none border border-[#F1F1F1] py-3 px-4 rounded-md text-neutral_grey1 text-sm font-normal leading-6 tracking-tight bg-[#FFF];
+   }
+   .donation_inputNominal {
+    @apply outline-none border border-[#F1F1F1] py-3 px-4 rounded-md text-sm font-normal leading-6 tracking-tight bg-[#09E7A433] bg-opacity-20 pl-11;
+   }
+   .rupiah_icon {
+    @apply absolute bottom-3 left-3;
+   }
+   .donation_formCheckbox {
+    @apply flex items-center gap-2;
+   }
+   .donation_checkbox {
+    @apply border border-accent2 checked:bg-accent2;
+   }
+   .donation_checkboxTitle {
+    @apply text-neutral_grey1 text-sm font-normal leading-6 tracking-tight;
+   }
+   .donasiNowBtn {
+    @apply bg-accent2 text-center w-full rounded-lg py-[14px] px-10 text-[#FFF] text-sm font-bold leading-5 mt-12;
+   }
+
+   /* Payment Class */
+   .payment {
+    @apply mx-auto max-w-md pt-[144px] pb-[24px] px-4;
+   }
+   .payment_title {
+    @apply text-center text-neutral_grey1 text-sm font-normal leading-6 tracking-tight mb-4;
+   }
+   .payment_betweenCopy {
+    @apply flex justify-between items-center w-full mb-4;
+   }
+   .payment_nominalFirst {
+    @apply text-2xl font-bold leading-7 max-w-[150px] md:max-w-[300px];
+   }
+   .copyNominal {
+    @apply text-sm font-bold leading-5 text-accent2 cursor-pointer hover:scale-105 duration-300;
+   }
+   .important {
+    @apply bg-[#FFD99F] p-4 rounded-lg font-normal text-sm leading-6 mb-6;
+   }
+   .countdown {
+    @apply text-center text-2xl font-bold leading-7 mb-4;
+   }
+   .countdown_detail {
+    @apply text-sm font-normal leading-6 tracking-tight text-center text-neutral_grey1 mb-8;
+   }
+   .no_credit {
+    @apply text-neutral_grey1 text-sm font-normal leading-5 tracking-tight;
+   }
+   .payment_credit {
+    @apply text-lg font-bold leading-6;
+   }
+   .payment_bank {
+    @apply text-neutral_black2 text-sm font-normal leading-6 tracking-tight;
+   }
+   .payment_username {
+    @apply text-neutral_black2 text-sm font-normal leading-6 tracking-tight;
+   }
+   .moreCampaignBtn {
+    @apply bg-[#FFF] text-center w-full rounded-lg py-[14px] px-10 text-neutral_grey1 text-sm font-bold leading-5 mt-4;
    }
 }
