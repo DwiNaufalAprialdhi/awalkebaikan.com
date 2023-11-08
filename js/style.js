@@ -29,6 +29,12 @@ var x = setInterval(function() {
   }
 }, 1000);
 
+//scroll Navbar
+window.addEventListener('scroll', function(){
+  var header = document.querySelector('nav')
+  header.classList.toggle('sticky_nav', window.scrollY > 0)
+})
+
 // visible Toggle 
 const visible = document.querySelector('.visible')
 const unvisible = document.querySelector('.unvisible')

@@ -20,7 +20,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -439,6 +439,8 @@ video {
 }
 
 body{
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 247 / var(--tw-bg-opacity));
   font-family: Noto Sans, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(39 39 46 / var(--tw-text-opacity));
@@ -451,12 +453,15 @@ nav{
   width: 100%;
   align-items: center;
   justify-content: space-between;
+  gap: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 1.5rem;
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 *, ::before, ::after{
@@ -594,6 +599,27 @@ nav{
 }
 
 /* Navbar Class */
+
+.sticky_nav{
+  position: sticky;
+  top: 0px;
+  z-index: 50;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 28rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1.5rem;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
 
 .brand{
   font-family: Poppins, sans-serif;
@@ -763,6 +789,8 @@ nav{
   margin-left: auto;
   margin-right: auto;
   max-width: 28rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-top: 144px;
   padding-bottom: 24px;
 }
@@ -1050,6 +1078,8 @@ nav{
   max-width: 28rem;
   flex-direction: column;
   gap: 2.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-top: 122px;
   padding-bottom: 120px;
 }
@@ -1266,6 +1296,8 @@ nav{
   margin-left: auto;
   margin-right: auto;
   max-width: 28rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 144px;
@@ -1417,6 +1449,8 @@ nav{
   margin-left: auto;
   margin-right: auto;
   max-width: 28rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 144px;
@@ -1569,6 +1603,8 @@ nav{
   margin-left: auto;
   margin-right: auto;
   max-width: 28rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-top: 67px;
   padding-bottom: 244px;
 }
@@ -3115,6 +3151,11 @@ nav{
 
 .text-\[\#336699\]\/\[\.35\]{
   color: rgb(51 102 153 / .35);
+}
+
+.text-blue-500{
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .text-neutral_black{

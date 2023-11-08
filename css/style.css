@@ -7,17 +7,20 @@
 
 @layer base {
     body {
-        @apply font-noto_sans text-neutral_black;
+        @apply font-noto_sans text-neutral_black bg-[#f7f7f7];
     }
     nav {
-        @apply fixed w-full p-6 flex justify-between items-center shadow-md z-50 bg-[#FFF];
+        @apply w-full fixed p-6 flex justify-between gap-1 items-center z-50 bg-[#FFF] transition duration-300;
     }
 }
 
 @layer components {
 
     /* Navbar Class */
-   .brand {
+   .sticky_nav {
+    @apply max-w-md mx-auto p-6 flex justify-between gap-1 sticky top-0 items-center z-50 bg-[#FFF] transition duration-300;
+   }
+    .brand {
     @apply font-poppins text-lg md:text-xl lg:text-2xl font-extrabold text-accent2 leading-10;
    }
    .domain {
@@ -55,7 +58,7 @@
 
    /* Login Class */
    .login {
-    @apply mx-auto max-w-md pt-[144px] pb-[24px];
+    @apply mx-auto max-w-md pt-[144px] pb-[24px] bg-[#FFF];
    }
    .text_brand {
     @apply font-poppins text-center text-3xl font-extrabold text-accent2 mb-4;
@@ -132,7 +135,7 @@
 
    /* Post Class */
    .post {
-       @apply mx-auto max-w-md max-h-max pt-[122px] pb-[120px] flex flex-col gap-10;
+       @apply mx-auto max-w-md max-h-max pt-[122px] pb-[120px] flex flex-col gap-10 bg-[#FFF];
     }
    .swiper {
      @apply max-w-md;
@@ -215,7 +218,7 @@
 
    /* Donation Class */
    .donation {
-    @apply mx-auto max-w-md pt-[144px] pb-[24px] px-4;
+    @apply mx-auto max-w-md pt-[144px] pb-[24px] px-4 bg-[#FFF];
    }
    .donnation_form {
     @apply flex flex-col gap-6;
@@ -265,7 +268,7 @@
 
    /* Payment Class */
    .payment {
-    @apply mx-auto max-w-md pt-[144px] pb-[24px] px-4;
+    @apply mx-auto max-w-md pt-[144px] pb-[24px] px-4 bg-[#FFF];
    }
    .payment_title {
     @apply text-center text-neutral_grey1 text-sm font-normal leading-6 tracking-tight mb-4;
@@ -306,7 +309,7 @@
 
    /* Account Class */
    .account {
-    @apply mx-auto max-w-md pt-[67px] pb-[244px];
+    @apply mx-auto max-w-md pt-[67px] pb-[244px] bg-[#FFF];
    }
    .account_profile {
     @apply w-full relative;
