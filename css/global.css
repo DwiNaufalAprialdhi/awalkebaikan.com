@@ -1085,7 +1085,19 @@ nav{
 }
 
 .swiper{
-  max-width: 28rem;
+  max-width: 20rem;
+}
+
+@media (min-width: 640px){
+  .swiper{
+    max-width: 28rem;
+  }
+}
+
+@media (min-width: 768px){
+  .swiper{
+    max-width: 28rem;
+  }
 }
 
 .swiper-slide{
