@@ -739,7 +739,7 @@ nav{
   position: fixed;
   left: 0px;
   right: 0px;
-  bottom: 21px;
+  bottom: 0px;
   z-index: 999;
   margin-left: auto;
   margin-right: auto;
@@ -1080,7 +1080,7 @@ nav{
   gap: 2.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-top: 122px;
+  padding-top: 90px;
   padding-bottom: 120px;
 }
 
@@ -1312,7 +1312,7 @@ nav{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 144px;
+  padding-top: 90px;
   padding-bottom: 24px;
 }
 
@@ -1465,7 +1465,7 @@ nav{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 144px;
+  padding-top: 90px;
   padding-bottom: 24px;
 }
 
@@ -1617,7 +1617,7 @@ nav{
   max-width: 28rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-top: 67px;
+  padding-top: 50px;
   padding-bottom: 244px;
 }
 
